@@ -17,6 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "firebase build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,5 +44,24 @@
     "@types/react": "^17.0.18",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.8"
-  }
+  },
+  "description": "Google Clone learning project to become familiar with the MERN stack",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiberiusnero560/google-clone.git"
+  },
+  "keywords": [
+    "react",
+    "javascript",
+    "MERN",
+    "stack",
+    "Node.js"
+  ],
+  "author": "Kyle LeBlanc",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tiberiusnero560/google-clone/issues"
+  },
+  "homepage": "."
 }

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tiberiusnero560/google-clonestatic/css/main.1b7da181.chunk.css",
+    "main.js": "/tiberiusnero560/google-clonestatic/js/main.f57928cc.chunk.js",
+    "main.js.map": "/tiberiusnero560/google-clonestatic/js/main.f57928cc.chunk.js.map",
+    "runtime-main.js": "/tiberiusnero560/google-clonestatic/js/runtime-main.a007e1c5.js",
+    "runtime-main.js.map": "/tiberiusnero560/google-clonestatic/js/runtime-main.a007e1c5.js.map",
+    "static/js/2.d5721e83.chunk.js": "/tiberiusnero560/google-clonestatic/js/2.d5721e83.chunk.js",
+    "static/js/2.d5721e83.chunk.js.map": "/tiberiusnero560/google-clonestatic/js/2.d5721e83.chunk.js.map",
+    "static/js/3.034d3d78.chunk.js": "/tiberiusnero560/google-clonestatic/js/3.034d3d78.chunk.js",
+    "static/js/3.034d3d78.chunk.js.map": "/tiberiusnero560/google-clonestatic/js/3.034d3d78.chunk.js.map",
+    "index.html": "/tiberiusnero560/google-cloneindex.html",
+    "static/css/main.1b7da181.chunk.css.map": "/tiberiusnero560/google-clonestatic/css/main.1b7da181.chunk.css.map",
+    "static/js/2.d5721e83.chunk.js.LICENSE.txt": "/tiberiusnero560/google-clonestatic/js/2.d5721e83.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a007e1c5.js",
+    "static/js/2.d5721e83.chunk.js",
+    "static/css/main.1b7da181.chunk.css",
+    "static/js/main.f57928cc.chunk.js"
+  ]
+}

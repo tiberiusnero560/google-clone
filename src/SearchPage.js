@@ -16,10 +16,10 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 function SearchPage() {
     const [{ term }, dispatch] = useStateValue();
     // LIVE API CALL
-    // const { data } = useGoogleSearch(term);             // Here we are using the data object we returned in the useGoogleSearch custom hook with the term we entered and stored in data layer  
+    const { data } = useGoogleSearch(term);             // Here we are using the data object we returned in the useGoogleSearch custom hook with the term we entered and stored in data layer  
 
-    // OFFLINE CALL using json response from first call
-    const data = Response;
+    // Mock API CALL using json response from first call
+    // const data = Response;
 
     console.log(data)
     return (
@@ -83,7 +83,7 @@ function SearchPage() {
             </div>
         </div>
 
-        {true && (
+        {term && (
         <div className="searchPage__results">
             <p className="searchPage__resultsCount">
                 About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime} seconds) for {term}
@@ -91,8 +91,15 @@ function SearchPage() {
 
              {data?.items.map(item => (
                 <div className='searchPage__result'>
-                    <a href={item.link}>
-                        {item.displayLink}
+                    <a className="searchPage__result" href={item.link}>
+                        {item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
+                            <img
+                                className="searchPage__resultImage"
+                                src={item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src}
+                                alt=""
+                            />
+                        )}
+                        {item.displayLink}▼
                     </a>
                     <a className='searchPage__resultTitle' href={item.link}>
                         <h2>{item.title}</h2>
